@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROGATY | Panel Admina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-brand">
+            <img src="zdj/logo.png" alt="ROGATY">
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html#shop">PŁYTY</a>
+            <a href="about.html">O NAS</a>
+            <a href="index.html#contact">KONTAKT</a>
+            <a href="admin.html" style="color: var(--red);">ADMIN</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>ZARZĄDZANIE PŁYTAMI</h2>
+        
+        <form id="adminForm" class="admin-panel">
+            <input type="hidden" id="editId">
+            <input type="text" id="title" placeholder="Tytuł Albumu" required>
+            <input type="number" id="price" placeholder="Cena (PLN)" step="0.01" required>
+            <textarea id="description" placeholder="Opis albumu"></textarea>
+            <input type="text" id="img" placeholder="Nazwa pliku obrazka (np. c1.jpg)" value="c1.jpg">
+            <button type="submit" id="saveBtn">DODAJ ALBUM</button>
+            <button type="button" id="cancelBtn" style="display:none; background: #444;">ANULUJ</button>
+        </form>
+
+        <div id="adminList" class="gallery">
+            </div>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROGATY | Black Metal Cult</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-brand">
+            <img src="zdj/logo.png" alt="ROGATY">
+        </a>
+
+        <div class="nav-links">
+            <a href="#shop">PŁYTY</a>
+            <a href="about.html">O NAS</a>
+            <a href="#contact">KONTAKT</a>
+            <a href="admin.html">ADMIN</a>
+        </div>
+    </nav>
+
+    <header>
+        <img src="zdj/img3.JPG" class="header-hover-img" alt="Mroczne tło">
+        
+        <h1>ROGATY</h1>
+        <p>kocham muzykę.</p>
+    </header>
+
+    <main>
+        <section id="shop">
+            <h2>PŁYTY</h2>
+            <div class="gallery" id="shop-root">
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>KONTAKT</h2>
+            <form id="contactForm">
+                <input type="email" id="email" placeholder="Twój Email" required>
+                <input type="text" id="subject" placeholder="Temat">
+                <textarea id="message" placeholder="Twoja wiadomość..." required></textarea>
+                <button type="submit" id="submitBtn">WYŚLIJ</button>
+            </form>
+            <div id="status"></div>
+        </section>
+    </main>
+
+    <div id="albumModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            
+            <h3>RECENZJE FANATYKÓW</h3>
+            <div id="reviewsList"></div>
+
+            <form id="reviewForm">
+                <input type="text" id="reviewAuthor" placeholder="Twoje imię">
+                <textarea id="reviewContent" placeholder="Twoja opinia..." required></textarea>
+                <input type="number" id="reviewRating" min="1" max="5" placeholder="Ocena (1-5)" required>
+                <button type="submit">DODAJ RECENZJĘ</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>ROGATY</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
